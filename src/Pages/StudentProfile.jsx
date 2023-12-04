@@ -25,7 +25,7 @@ const StudentProfile = () => {
             {student.name}
           </h1>
           <p className="text-xl text-center">{student.regno}</p>
-          <div className="border-2 w-fit mx-2 mb-10 rounded-2xl">
+          <div className="border-2 w-fit mx-2 rounded-2xl">
             <table class="table-auto text-center border-collapse drop-shadow-xl">
               <thead>
                 <tr>
