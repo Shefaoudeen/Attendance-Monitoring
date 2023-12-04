@@ -2,10 +2,11 @@ import React from "react";
 import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import Attendance from "./Pages/Attendance";
+import Internal from "./Pages/Internal";
 
 const App = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
       <BrowserRouter>
         <header className="flex justify-between text-sm px-4 py-6 bg-gray-300 relative w-full items-center">
           <div>
@@ -25,6 +26,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/attendance" element={<Attendance />} />
+          <Route path="/internal" element={<Internal />} />
         </Routes>
       </BrowserRouter>
     </div>
