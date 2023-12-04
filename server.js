@@ -12,14 +12,14 @@ createServer({
       regno: "21EC1001",
       image: Studentimage,
       attendance: {
-        moe: 0,
+        moe: 1,
         dcn: 1,
         vd: 2,
-        cse: 0,
+        cse: 2,
         ime: 1,
-        moel: 2,
+        moel: 0,
         dcnl: 0,
-        vdl: 2,
+        vdl: 0,
       },
     });
     server.create("student", {
@@ -27,30 +27,80 @@ createServer({
       name: "Student 2",
       regno: "21EC1002",
       image: Studentimage,
+      attendance: {
+        moe: 1,
+        dcn: 1,
+        vd: 2,
+        cse: 2,
+        ime: 1,
+        moel: 0,
+        dcnl: 0,
+        vdl: 0,
+      },
     });
     server.create("student", {
       id: "3",
       name: "Student 3",
       regno: "21EC1003",
       image: Studentimage,
+      attendance: {
+        moe: 1,
+        dcn: 1,
+        vd: 2,
+        cse: 2,
+        ime: 1,
+        moel: 0,
+        dcnl: 0,
+        vdl: 0,
+      },
     });
     server.create("student", {
       id: "4",
       name: "Student 4",
       regno: "21EC1004",
       image: Studentimage,
+      attendance: {
+        moe: 1,
+        dcn: 1,
+        vd: 2,
+        cse: 2,
+        ime: 1,
+        moel: 0,
+        dcnl: 0,
+        vdl: 0,
+      },
     });
     server.create("student", {
       id: "5",
       name: "Student 5",
       regno: "21EC1005",
       image: Studentimage,
+      attendance: {
+        moe: 1,
+        dcn: 1,
+        vd: 2,
+        cse: 2,
+        ime: 1,
+        moel: 0,
+        dcnl: 0,
+        vdl: 0,
+      },
     });
     server.create("student", {
       id: "6",
       name: "Student 6",
       regno: "21EC1006",
       image: Studentimage,
+      attendance: {
+        moe: 1,
+        dcn: 1,
+        vd: 2,
+        cse: 2,
+        ime: 1,
+        moel: 0,
+        dcnl: 0,
+        vdl: 0,
+      },
     });
   },
 

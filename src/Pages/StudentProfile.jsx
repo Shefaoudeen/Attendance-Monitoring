@@ -78,7 +78,20 @@ const StudentProfile = () => {
               </table>
             </div>
             <h1 className="font-extrabold text-center max-sm:mb-6 lg:mt-4">
-              OVERALL - %
+              OVERALL -{" "}
+              {(
+                ((student.attendance.moe / number.moe +
+                  student.attendance.dcn / number.dcn +
+                  student.attendance.vd / number.vd +
+                  student.attendance.cse / number.cse +
+                  student.attendance.ime / number.ime +
+                  student.attendance.moel / number.moel +
+                  student.attendance.dcnl / number.dcnl +
+                  student.attendance.vdl / number.vdl) /
+                  8) *
+                100
+              ).toFixed(2)}
+              %
             </h1>
           </div>
           <footer className="fixed bottom-0 max-sm:mt-4 text-center w-full bg-gray-300 py-2 font-semibold">
