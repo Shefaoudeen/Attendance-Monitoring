@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
 import Home from "./Pages/Home";
+import Attendance from "./Pages/Attendance";
 
 const App = () => {
   return (
@@ -23,10 +24,8 @@ const App = () => {
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/attendance" element={<Attendance />} />
         </Routes>
-        <footer className="relative bottom-0 text-center w-full bg-gray-300 py-2">
-          &#169; Shefa 2024
-        </footer>
       </BrowserRouter>
     </div>
   );

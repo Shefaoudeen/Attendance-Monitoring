@@ -28,6 +28,9 @@ const Home = () => {
       </div>
       <h1 className="z-10 font-extrabold">WEBSITE UNDER CONSTRUCTION</h1>
       <img src={Attendance} width={250} className="absolute bottom-0 left-0" />
+      <footer className="absolute bottom-0 text-center w-full bg-gray-300 py-2">
+        &#169; Shefa 2024
+      </footer>
     </div>
   );
 };
