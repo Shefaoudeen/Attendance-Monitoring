@@ -1,3 +1,3 @@
-import Attendance from "./attendance.avif";
+import Attendance from "./attendance.png";
 
 export { Attendance };
