@@ -12,25 +12,21 @@ const Home = () => {
       style={styling}
     >
       <h1 className="font-extrabold">COMING SOON</h1>
-      <div className="border-none border-black p-2 rounded-xl bg-gray-300 text-white drop-shadow-xl z-10">
-        <div className="text-3xl text-center font-extrabold z-10">
+      <div className="border-none border-black p-2.5 rounded-xl mx-2 bg-gray-300 text-white drop-shadow-2xl z-10">
+        <div className="text-2xl text-center font-extrabold z-10">
           <h1 className="">Attendance Monitoring</h1>
           <h1>Web App</h1>
         </div>
-        <p className="z-10 text-gray-500">
-          Track Your Attendance closely, Reach Your Goal Wisely
-        </p>
+        <div className="leading-6">
+          <p className="z-10 text-gray-500 text-center">
+            Track Your Attendance closely
+          </p>
+          <p className="z-10 text-gray-500 text-center">
+            Reach Your Goal Wisely
+          </p>
+        </div>
       </div>
       <h1 className="z-10 font-extrabold">WEBSITE UNDER CONSTRUCTION</h1>
-      {/*
-      <h1 className="z-10 text-xl font-bold">DEVELOPED BY</h1>
-      <h1 className="z-10 text-3xl font-extrabold">SHEFAOUDEEN</h1>
-      <div className="z-10 text-2xl flex w-[50%] justify-around">
-        <i className="fa fa-github"></i>
-        <i className="fa fa-envelope"></i>
-        <i className="fa fa-instagram"></i>
-        <i className="fa fa-linkedin"></i>
-      </div> */}
       <img src={Attendance} width={250} className="absolute bottom-0 left-0" />
     </div>
   );

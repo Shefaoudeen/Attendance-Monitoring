@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="flex flex-col">
       <BrowserRouter>
-        <header className="flex justify-between text-sm px-4 py-6 bg-gray-300 relative w-full">
+        <header className="flex justify-between text-sm px-4 py-6 bg-gray-300 relative w-full items-center">
           <div>
             <Link to="/" className="bg-white p-1.5 rounded-lg">
               ECE-B Attendance
