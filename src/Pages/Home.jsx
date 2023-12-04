@@ -12,7 +12,7 @@ const Home = () => {
       style={styling}
     >
       <h1 className="font-extrabold">COMING SOON</h1>
-      <div className="border-none border-black p-2.5 rounded-xl mx-2 bg-gray-300 text-white drop-shadow-2xl z-10">
+      <div className="border-none border-black p-2.5 rounded-xl mx-2 bg-blue-400 text-white drop-shadow-2xl z-10">
         <div className="text-3xl text-center font-extrabold z-10">
           <h1 className="">Attendance Monitoring</h1>
           <h1>Web App</h1>
