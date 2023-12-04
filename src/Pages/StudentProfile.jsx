@@ -28,7 +28,7 @@ const StudentProfile = () => {
             </h1>
             <p className="text-xl text-center">{student.regno}</p>
             <div className="border-2 max-sm:w-fit mx-2 rounded-2xl w-full">
-              <table class="table-auto text-center drop-shadow-xl lg:text-xl border-separate [border-spacing:0.75rem]">
+              <table class="table-auto text-center drop-shadow-xl lg:text-xl border-separate lg:[border-spacing:0.75rem] max-sm:[border-spacing:0.5rem]">
                 <thead>
                   <tr>
                     <th>Subject Name</th>
