@@ -78,7 +78,7 @@ const StudentProfile = () => {
               </tbody>
             </table>
           </div>
-          <h1 className="font-extrabold text-center">OVERALL - %</h1>
+          <h1 className="font-extrabold text-center mb-6">OVERALL - %</h1>
           <footer className="fixed bottom-0 mt-4 text-center w-full bg-gray-300 py-2 font-semibold">
             &#169; Shefa 2024
           </footer>
