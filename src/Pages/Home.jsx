@@ -8,7 +8,7 @@ const styling = {
 const Home = () => {
   return (
     <div
-      className=" bg-blue-200 h-screen flex flex-col justify-center items-center relative leading-10"
+      className="  h-screen flex flex-col justify-center items-center relative leading-10"
       style={styling}
     >
       <h1 className="font-extrabold">COMING SOON</h1>
@@ -27,7 +27,10 @@ const Home = () => {
         </div>
       </div>
       <h1 className="z-10 font-extrabold">WEBSITE UNDER CONSTRUCTION</h1>
-      <img src={Attendance} width={250} className="absolute bottom-0 left-0" />
+      <img
+        src={Attendance}
+        className="absolute bottom-0 left-0 w-[450px] lg:-mb-[50px] max-sm:w-[250px]"
+      />
       <footer className="fixed bottom-0 text-center w-full bg-gray-300 py-2 font-semibold">
         &#169; Shefa 2024
       </footer>
