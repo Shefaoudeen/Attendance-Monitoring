@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import student from "../Records/data";
+import { Link, json } from "react-router-dom";
 
 const styling = {
   height: "calc(100vh - 175px)",
 };
 
 const Attendance = () => {
+  const [studentProfile, setStudentProfile] = useState([]);
+  useEffect(() => {
+    fetch("/api/students")
+      .then((res) => res.json())
+      .then((data) => setStudentProfile(data.students));
+  }, []);
+
   return (
     <div style={styling} className="w-full">
       <div className="w-full flex justify-around py-1 bg-gray-300">
@@ -16,14 +24,19 @@ const Attendance = () => {
       </div>
       <div className="flex justify-center items-center mt-3 pb-[75px] w-full">
         <div className="grid grid-cols-5 max-sm:grid-cols-2 gap-6 max-sm:gap-5 px-3 w-full max-sm:w-[400px]">
-          {student.map((stud) => (
-            <div className="text-center border-2 bg-gray-50 drop-shadow-xl rounded-xl">
-              <img
-                src={stud.image}
-                className="rounded-tr-xl rounded-tl-xl w-full"
-              />
-              <h1 className="font-bold text-xl">{stud.name}</h1>
-              <p className=" text-sm pb-2">{stud.regno}</p>
+          {studentProfile.map((stud) => (
+            <div
+              key={stud.id}
+              className="text-center border-2 bg-gray-50 drop-shadow-xl rounded-xl"
+            >
+              <Link to={`/attendance/${stud.id}`}>
+                <img
+                  src={stud.image}
+                  className="rounded-tr-xl rounded-tl-xl w-full"
+                />
+                <h1 className="font-bold text-xl">{stud.name}</h1>
+                <p className=" text-sm pb-2">{stud.regno}</p>
+              </Link>
             </div>
           ))}
         </div>

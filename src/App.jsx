@@ -3,6 +3,8 @@ import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import Attendance from "./Pages/Attendance";
 import Internal from "./Pages/Internal";
+import StudentProfile from "./Pages/StudentProfile";
+import "../server";
 
 const App = () => {
   return (
@@ -26,6 +28,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/attendance" element={<Attendance />} />
+          <Route path="/attendance/:id" element={<StudentProfile />} />
           <Route path="/internal" element={<Internal />} />
         </Routes>
       </BrowserRouter>
