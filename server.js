@@ -11,6 +11,16 @@ createServer({
       name: "Student 1",
       regno: "21EC1001",
       image: Studentimage,
+      attendance: {
+        moe: 0,
+        dcn: 1,
+        vd: 2,
+        cse: 0,
+        ime: 1,
+        moel: 2,
+        dcnl: 0,
+        vdl: 2,
+      },
     });
     server.create("student", {
       id: "2",
