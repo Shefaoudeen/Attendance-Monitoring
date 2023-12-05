@@ -12,6 +12,10 @@ const StudentProfile = () => {
       .then((data) => setStudent(data.students));
   }, [params.id]);
 
+  function calculatePercentage(a, b) {
+    return (a / b) * 100;
+  }
+
   return (
     <div className="h-[100vh] flex items-center w-full justify-center lg:-mt-[100px]">
       {student ? (
@@ -27,7 +31,7 @@ const StudentProfile = () => {
               {student.name}
             </h1>
             <p className="text-xl text-center">{student.regno}</p>
-            <div className="border-2 max-sm:w-fit mx-2 rounded-2xl w-full">
+            <div className="border-2 max-sm:w-fit mx-2 rounded-2xl w-full max-sm:px-2">
               <table class="table-auto text-center drop-shadow-xl lg:text-xl border-separate lg:[border-spacing:0.75rem] max-sm:[border-spacing:0.5rem]">
                 <thead>
                   <tr>
@@ -39,40 +43,64 @@ const StudentProfile = () => {
                   <tr>
                     <td>Microwave and Optical Engineering</td>
 
-                    <td>{(student.attendance.moe / number.moe) * 100}%</td>
+                    <td>
+                      {calculatePercentage(student.attendance.moe, number.moe)}%
+                    </td>
                   </tr>
                   <tr>
                     <td>Data Communication Networks</td>
 
-                    <td>{(student.attendance.dcn / number.dcn) * 100}%</td>
+                    <td>
+                      {calculatePercentage(student.attendance.dcn, number.dcn)}%
+                    </td>
                   </tr>
                   <tr>
                     <td>VLSI Design</td>
 
-                    <td>{(student.attendance.vd / number.vd) * 100}%</td>
+                    <td>
+                      {calculatePercentage(student.attendance.vd, number.vd)}%
+                    </td>
                   </tr>
                   <tr>
                     <td>Control Systems Engineering</td>
 
-                    <td>{(student.attendance.cse / number.cse) * 100}%</td>
+                    <td>
+                      {calculatePercentage(student.attendance.cse, number.cse)}%
+                    </td>
                   </tr>
                   <tr>
                     <td>Industrial Management and Economics</td>
 
-                    <td>{(student.attendance.ime / number.ime) * 100}%</td>
+                    <td>
+                      {calculatePercentage(student.attendance.ime, number.ime)}%
+                    </td>
                   </tr>
                   <tr>
                     <td>Microwave and Optical Engineering Lab</td>
-                    <td>{(student.attendance.moel / number.moel) * 100}%</td>
+                    <td>
+                      {calculatePercentage(
+                        student.attendance.moel,
+                        number.moel
+                      )}
+                      %
+                    </td>
                   </tr>
                   <tr>
                     <td>Data Communication Networks Lab</td>
-                    <td>{(student.attendance.dcnl / number.dcnl) * 100}%</td>
+                    <td>
+                      {calculatePercentage(
+                        student.attendance.dcnl,
+                        number.dcnl
+                      )}
+                      %
+                    </td>
                   </tr>
                   <tr>
                     <td>VLSI Design Lab</td>
 
-                    <td>{(student.attendance.vdl / number.vdl) * 100}%</td>
+                    <td>
+                      {calculatePercentage(student.attendance.vdl, number.vdl)}%
+                    </td>
                   </tr>
                 </tbody>
               </table>
