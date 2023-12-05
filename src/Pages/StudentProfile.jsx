@@ -20,7 +20,7 @@ const StudentProfile = () => {
     <div className="h-[100vh] flex items-center w-full justify-center lg:-mt-[100px]">
       {student ? (
         <div className="flex max-sm:flex-col max-sm:justify-center items-center justify-around w-full">
-          <div className="flex flex-col justify-center max-sm:w-full items-center  my-3">
+          <div className="flex flex-col justify-center max-sm:w-full items-center  lg:my-3 ">
             <img
               src={student.image}
               className="max-sm:w-[200px] max-sm:h-[200px] rounded-3xl drop-shadow-lg object-fill w-[400px] h-[400px]"
